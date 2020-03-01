@@ -4,6 +4,7 @@ body {
   margin: 0;
 }
 
+/* styling text */
 h1 {
   font-size: 45px;
   margin: 0;
@@ -15,16 +16,127 @@ h2 {
   margin-bottom: 20px;
 }
 
-header p {
-  font-family: 'roboto';
-  margin-top: 30px;
-  font-size: 16px;
+h3 {
+  background-color: #FA382F;
+  color: white;
+  width: fit-content;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 4px 5px;
+  margin: 10px;
+}
+
+h5 {
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #FA382F;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .not-bold {
   font-weight: normal;
 }
 
+.colored-text {
+  color: #FA382F;
+}
+
+.underline {
+  border-bottom: 1px solid #FA382F;
+}
+
+header p {
+  font-family: 'roboto';
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.about-me p {
+  display: inline;
+}
+
+.other-projects p {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 25px;
+}
+
+.my-thoughts p {
+  text-align: left;
+}
+
+.gray-background {
+  background-color: #F4F4F4;
+}
+
+/* styling images */
+.linked-in {
+  background-image: url("images/linkedin.svg");
+}
+
+.git-hub {
+  background-image: url("images/github.svg");
+}
+
+.stack-overflow {
+  background-image: url("images/stackoverflow.svg");
+}
+
+.profile-image {
+  position: absolute;
+  top: 360px;
+  left: 185px;
+  border: white solid 3px;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  align-self: flex-end;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  margin-top: 40px;
+  background-color: #797E9D;
+}
+
+/* styling decoration element */
+.decoration-element {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+
+.colored-line {
+  border-radius: 5px;
+  background-color: #FA382F;
+  width: 50px;
+  height: 3px;
+}
+
+.colored-circle {
+  position: absolute;
+  top: -3px;
+  left: 45px;
+  border-radius: 50%;
+  background-color: #FA382F;
+  width: 10px;
+  height: 10px;
+}
+
+/* styling elements */
 header {
   position: relative;
   display: flex;
@@ -51,18 +163,6 @@ header {
   width: 40px;
 }
 
-.linked-in {
-  background-image: url("images/linkedin.svg");
-}
-
-.git-hub {
-  background-image: url("images/github.svg");
-}
-
-.stack-overflow {
-  background-image: url("images/stackoverflow.svg");
-}
-
 .presentation-text {
   font-weight: bold;
   color: white;
@@ -70,49 +170,57 @@ header {
   padding-left: 30px;
 }
 
-.profile-image {
-  position: absolute;
-  top: 360px;
-  left: 185px;
-  border: white solid 3px;
-  border-radius: 50%;
-  height: 160px;
-  width: 160px;
-  align-self: flex-end;
-}
-
 .about-me {
-  background-color: #F4F4F4;
-  font-size: 19px;
-  letter-spacing: 2px;
-  line-height: 25px;
+  text-align: center;
   margin-top: 5px;
   padding: 40px;
 }
 
-.about-me p {
-  display: inline;
-}
-
-.text-decoration {
-  position: relative;
-  display: inline-flex;
+.text-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-right: 10px;
+  margin-top: 5px;
+  padding: 35px;
 }
 
-.colored-line {
-  border-radius: 5px;
-  background-color: #FA382F;
-  width: 50px;
-  height: 3px;
+.project-tags {
+  font-size: 13px;
+  display: inline-flex;
+  width: 90%;
+  justify-content: flex-start;
 }
 
-.colored-circle {
-  position: absolute;
-  left: 45px;
-  border-radius: 50%;
-  background-color: #FA382F;
-  width: 10px;
-  height: 10px;
+.tags {
+  background-color: #FDDFE7;
+  font-size: 11px;
+  font-family: 'roboto';
+  margin-right: 7px;
+  padding: 5px;
 }
+
+.skills {
+  font-family:'roboto';
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 18px;
+  padding: 0;
+}
+
+.list {
+  height: 260px;
+}
+
+
