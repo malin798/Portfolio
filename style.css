@@ -39,6 +39,11 @@ p {
   line-height: 25px;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -84,22 +89,33 @@ header p {
   background-image: url("images/linkedin.svg");
 }
 
+.linked-in-color  {
+  background-image: url("images/linkedin-color.svg");
+}
+
 .git-hub {
   background-image: url("images/github.svg");
+}
+
+.github-color {
+  background-image: url("images/github-color.svg");
 }
 
 .stack-overflow {
   background-image: url("images/stackoverflow.svg");
 }
 
+.stack-color {
+  background-image: url("images/stack-color.svg");
+}
+
 .profile-image {
   position: absolute;
-  top: 360px;
-  left: 185px;
-  border: white solid 3px;
-  border-radius: 50%;
+  top: 380px;
   height: 160px;
   width: 160px;
+  border: white solid 3px;
+  border-radius: 50%;
   align-self: flex-end;
 }
 
@@ -139,6 +155,7 @@ header p {
 /* styling elements */
 header {
   position: relative;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,28 +163,39 @@ header {
   background-color: #B4AEB0;
   height: 508px;
   width: 100%;
+  padding: 35px;
 }
 
 .social-media-links {
+  display: flex;
   align-self: flex-end;
-  padding-right: 25px;
 }
 
-.social-media-button {
-  border: 3px solid white;
+.social-media {
   border-radius: 50%;
-  background: transparent;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.small {
+  border: 3px solid white;
+  margin-right: 5px;
   height: 40px;
   width: 40px;
+}
+
+.big {
+  border: solid 4px #FA382F;
+  padding: 16px;
+  height: 20px;
+  width: 20px;
 }
 
 .presentation-text {
   font-weight: bold;
   color: white;
-  margin-bottom: 50px;
-  padding-left: 30px;
+  margin-bottom: 10px;
 }
 
 .about-me {
@@ -183,6 +211,12 @@ header {
   align-items: center;
   margin-top: 5px;
   padding: 35px;
+}
+
+.featured-projects a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-tags {
@@ -224,3 +258,6 @@ ul {
 }
 
 
+/* desktop */
+
+/* .project-tags {width: 670px;}
