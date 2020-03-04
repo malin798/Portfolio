@@ -41,6 +41,7 @@ a {
 }
 
 .orange-box {
+  display: inline-flex;
   background-color: #FA382F;
   color: white;
   width: fit-content;
@@ -315,8 +316,13 @@ header {
 }
 
 .hidden-mobile {
+  display: none;
   height: 0px;
   overflow: hidden;  
+}
+
+.hidden-desktop {
+  display: inherit;
 }
 
 footer {
@@ -450,6 +456,12 @@ footer {
 
   .hidden-mobile {
     height: auto;
+    width: auto;
+    display: inherit;
+  }
+
+  .hidden-desktop {
+    display: none;
   }
   
   .contact {
