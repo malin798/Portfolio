@@ -82,8 +82,8 @@ footer p {
   margin: 5px;
 }
 
-.gray-background {
-  background-color: #F4F4F4;
+.background {
+  background-color: #f0f8ff85;
 }
 
 /* styling images and social media */
@@ -206,7 +206,7 @@ footer p {
 
 .column-list li {
   align-items: flex-start;
-  width: 80%;
+  width: 100%;
 }
 
 li {
@@ -259,7 +259,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #B4AEB0;
+  background-color: #797e9d;
   height: 508px;
   width: 100%;
   padding: 35px;
@@ -337,9 +337,9 @@ footer {
   justify-content: space-around;
 }
 
-/* styling desktop */
+/*styling tablet*/
 
-@media (min-width: 1025px) { 
+@media (min-width: 668px) {
 
   h1 {
     font-size: 60px;
@@ -348,6 +348,66 @@ footer {
   h2 {
     font-size: 40px;
   }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 19px;
+  }
+
+  li {
+    font-size: 19px;
+  }
+
+  .about-me {
+    padding: 60px 130px;
+  }
+
+  .text-box {
+    padding: 60px 130px;
+  }
+
+  .left-list {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .left-list li {
+    width: 45%;
+  }
+
+  .project-tags {
+    flex-wrap: wrap;
+  }
+
+  .image {
+    width: 220px;
+    height: 150px;
+  }
+
+  .small {
+    height: 50px;
+    width: 50px;
+  }
+
+  .hidden-mobile {
+    height: auto;
+    width: auto;
+    display: inherit;
+  }
+
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+/* styling desktop */
+
+@media (min-width: 1025px) { 
 
   h3 {
     font-size: 35px;
@@ -417,14 +477,6 @@ footer {
     padding: 120px 410px;
   }
 
-  .left-list {
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
   .left-list li {
     width: 40%;
     margin: 0px 30px;
@@ -452,16 +504,6 @@ footer {
   li {
     font-size: 21px;
     line-height: 35px;
-  }
-
-  .hidden-mobile {
-    height: auto;
-    width: auto;
-    display: inherit;
-  }
-
-  .hidden-desktop {
-    display: none;
   }
   
   .contact {
