@@ -87,29 +87,6 @@ footer p {
 }
 
 /* styling images and social media */
-.linked-in {
-  background-image: url("images/linkedin.svg");
-}
-
-.linked-in-color  {
-  background-image: url("images/linkedin-color.svg");
-}
-
-.git-hub {
-  background-image: url("images/github.svg");
-}
-
-.github-color {
-  background-image: url("images/github-color.svg");
-}
-
-.stack-overflow {
-  background-image: url("images/stackoverflow.svg");
-}
-
-.stack-color {
-  background-image: url("images/stack-color.svg");
-}
 
 .social-media-top {
   display: flex;
@@ -132,24 +109,29 @@ footer p {
 }
 
 .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .small {
   border: 2px solid white;
   margin-right: 5px;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
+}
+
+.small img {
+  width: 20px;
 }
 
 .big {
   border: solid 3px #FA382F;
   padding: 16px;
-  height: 20px;
-  width: 20px;
+  height: 60px;
+  width: 60px;
 }
 
 .profile-image {
@@ -245,16 +227,17 @@ li a {
 }
 
 /* styling elements */
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'monserrat';
-  box-sizing: border-box;
   margin: 0;
 }
 
 header {
   position: relative;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -431,6 +414,10 @@ footer {
     padding: 35px 400px;
   }
 
+  a:hover {
+    text-decoration: underline solid rgb(236, 129, 90);
+  }
+
   .social-media-bottom {
     margin-top: 60px;
     width: 80%;
@@ -444,17 +431,23 @@ footer {
     opacity: 0.6;
   }
 
-  .big {
-    height: 70px;
-    width: 70px;
-    background-size: 40px;
-  }
-
   .small {
     margin-right: 15px;
     height: 60px;
     width: 60px;
-    background-size: 25px;
+  }
+
+  .small img {
+    height: 25px;
+  }
+
+  .big {
+    height: 70px;
+    width: 70px;
+  }
+
+  .big img {
+    width: 30px;
   }
 
   .profile-image {
@@ -509,4 +502,14 @@ footer {
   .contact {
     height: 170px;
   }
+
+  a:focus {
+    outline: none;
+    border: solid #FA382F 3px;
+  }
+
+  .big:focus {
+    background-color: rgb(245, 174, 148);
+  }
+
 }
